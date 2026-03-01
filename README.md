@@ -1,6 +1,6 @@
 # Reliable ML 2026 - Summer School Website
 
-**Reliable Learning: from LLMs to cyber-physical and biological Systems**
+**Reliable Machine Learning: from LLMs to cyber-physical and biological Systems**
 ETH Zürich | August 31 – September 3, 2026
 
 A polished, static website for the Reliable ML 2026 summer school, ready to deploy on GitHub Pages.
