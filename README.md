@@ -1,23 +1,23 @@
-# AEGIS 2026 - Summer School Website
+# Reliable ML 2026 - Summer School Website
 
-**AI for Evolving, Generalizable, Intelligent Systems**
+**Reliable Learning: from LLMs to cyber-physical and biological Systems**
 ETH Zürich | August 31 – September 3, 2026
 
-A polished, static website for the AEGIS 2026 summer school, ready to deploy on GitHub Pages.
+A polished, static website for the Reliable ML 2026 summer school, ready to deploy on GitHub Pages.
 
 ## Quick Start
 
 ### Deploy to GitHub Pages
 
-1. Create a new GitHub repository (e.g., `aegis2026` or `aegis2026.github.io`)
+1. Create a new GitHub repository (e.g., `reliable-ml` or `reliable-ml.github.io`)
 
 2. Push this code to the repository:
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: AEGIS 2026 website"
+   git commit -m "Initial commit: Reliable ML 2026 website"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/aegis2026.git
+   git remote add origin https://github.com/YOUR_USERNAME/reliable-ml.git
    git push -u origin main
    ```
 
@@ -27,7 +27,7 @@ A polished, static website for the AEGIS 2026 summer school, ready to deploy on 
    - Select **main** branch and **/ (root)** folder
    - Click **Save**
 
-4. Your site will be live at `https://YOUR_USERNAME.github.io/aegis2026/`
+4. Your site will be live at `https://YOUR_USERNAME.github.io/reliable-ml/`
 
 ### Local Development
 
@@ -104,7 +104,7 @@ Edit CSS custom properties in `css/styles.css`:
 ## File Structure
 
 ```
-aegis2026/
+reliable-ml/
 ├── index.html          # Main HTML file
 ├── css/
 │   └── styles.css      # All styles
@@ -137,4 +137,4 @@ aegis2026/
 
 ## License
 
-© 2026 AEGIS Summer School, ETH Zürich
+© 2026 Reliable ML Summer School, ETH Zürich

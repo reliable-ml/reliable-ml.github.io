@@ -1,6 +1,6 @@
 /* ==========================================================================
-   AEGIS 2026 - Main JavaScript
-   AI for Evolving, Generalizable, Intelligent Systems
+   Reliable ML 2026 - Main JavaScript
+   Reliable Learning: from LLMs to cyber-physical and biological Systems
    ETH Zürich Summer School
    ========================================================================== */
 
