@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REALIS 2026 — Reliable Learning: from LLMs to cyber-physical and biological Systems | ETH Zürich Summer School</title>
+    <meta name="description" content="REALIS 2026: An ETH-EPFL summer school on Reliable Learning: from LLMs to cyber-physical and biological Systems. August 31 – September 3, 2026 at ETH Zürich.">
+    <meta name="keywords" content="AI, machine learning, summer school, ETH Zürich, robustness, uncertainty, distributional robustness, causality, reinforcement learning, LLMs, cyber-physical systems, biological systems">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="REALIS 2026 — Reliable Learning: from LLMs to cyber-physical and biological Systems">
+    <meta property="og:description" content="ETH-EPFL summer school on Reliable Learning: from LLMs to cyber-physical and biological Systems. August 31 – September 3, 2026 at ETH Zürich.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aegis2026.github.io">
+    <meta property="og:image" content="https://aegis2026.github.io/assets/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="REALIS 2026 — ETH Zürich Summer School">
+    <meta name="twitter:description" content="Reliable Learning: from LLMs to cyber-physical and biological Systems. August 31 – September 3, 2026.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 2L4 10V22C4 31.05 10.95 39.35 20 40C29.05 39.35 36 31.05 36 22V10L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M20 8L10 13V21C10 26.55 14.15 31.65 20 32C25.85 31.65 30 26.55 30 21V13L20 8Z" fill="currentColor" opacity="0.2"/>
+                </svg>
+                <span>REALIS 2026</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#speakers" class="nav-link">Speakers</a></li>
+                <li><a href="#program" class="nav-link">Program</a></li>
+                <li><a href="#venue" class="nav-link">Venue</a></li>
+                <li><a href="#practical" class="nav-link">Practical Info</a></li>
+                <li><a href="#register" class="nav-link nav-link-cta">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas class="hero-canvas" id="hero-canvas"></canvas>
+        <div class="hero-shield">
+            <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 10L20 45V115C20 170 55 215 100 230C145 215 180 170 180 115V45L100 10Z"
+                      stroke="url(#shield-gradient)" stroke-width="2" fill="none" class="shield-outer"/>
+                <path d="M100 30L40 55V115C40 160 65 195 100 205C135 195 160 160 160 115V55L100 30Z"
+                      fill="url(#shield-fill)" class="shield-inner"/>
+                <defs>
+                    <linearGradient id="shield-gradient" x1="100" y1="10" x2="100" y2="230" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F59E0B" stop-opacity="0.8"/>
+                        <stop offset="1" stop-color="#3B82F6" stop-opacity="0.4"/>
+                    </linearGradient>
+                    <linearGradient id="shield-fill" x1="100" y1="30" x2="100" y2="205" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F59E0B" stop-opacity="0.1"/>
+                        <stop offset="1" stop-color="#3B82F6" stop-opacity="0.05"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-institutions">
+                <img src="assets/sponsors/eth-zurich.svg" alt="ETH Zürich" class="hero-institution-logo">
+                <img src="assets/sponsors/epfl.svg" alt="EPFL" class="hero-institution-logo">
+            </div>
+            <div class="hero-badge">ETH-EPFL Summer School</div>
+            <h1 class="hero-title">REALIS 2026</h1>
+            <p class="hero-subtitle">Reliable Learning: from LLMs to cyber-physical and biological Systems</p>
+            <div class="hero-meta">
+                <div class="hero-meta-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>August 31 – September 3, 2026</span>
+                </div>
+                <div class="hero-meta-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>ETH Zürich, Switzerland</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#register" class="btn btn-primary">Register Interest</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">About</span>
+                <h2 class="section-title">Bridging the Gap Between AI and Reliability</h2>
+            </div>
+
+            <div class="about-content animate-on-scroll">
+                <div class="about-text">
+                    <p>Interacting systems—ranging from biological networks and social webs to critical infrastructures like power grids—pose distinctive modeling challenges. Unlike many physical systems with well-established governing equations, most interacting systems lack explicit dynamical laws, making data-driven modeling and machine learning essential.</p>
+                    <p>Yet, standard ML methods often break down under distribution shifts or high noise, and struggle to provide reliable predictions in the face of unexpected or rare scenarios, especially in the context of complex dynamical systems.</p>
+                </div>
+
+                <blockquote class="about-quote">
+                    <p>How can we design AI methods that are robust, reliable, and generalizable when learning from and acting on evolving, intelligent systems under distributional shifts?</p>
+                </blockquote>
+
+                <p class="about-text">REALIS 2026 brings together researchers in machine learning, distributional robustness, causal learning, network modeling, robotics, and feedback control systems to address this core question.</p>
+            </div>
+
+            <div class="themes animate-on-scroll">
+                <h3 class="themes-title">Core Themes</h3>
+                <div class="themes-grid">
+                    <div class="theme-item">
+                        <div class="theme-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <span>Distributional Robustness & OOD Generalization</span>
+                    </div>
+                    <div class="theme-item">
+                        <div class="theme-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <span>Causality & Distribution Shift</span>
+                    </div>
+                    <div class="theme-item">
+                        <div class="theme-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                                <line x1="4" y1="22" x2="4" y2="15"/>
+                            </svg>
+                        </div>
+                        <span>Reinforcement Learning & Decision-Making</span>
+                    </div>
+                    <div class="theme-item">
+                        <div class="theme-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 3l-4 4-4-4"/>
+                            </svg>
+                        </div>
+                        <span>Trustworthy & Robust Autonomy</span>
+                    </div>
+                    <div class="theme-item">
+                        <div class="theme-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                <polyline points="2 17 12 22 22 17"/>
+                                <polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                        </div>
+                        <span>Generative AI & Foundation Models</span>
+                    </div>
+                    <div class="theme-item">
+                        <div class="theme-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="6" cy="6" r="3"/>
+                                <circle cx="18" cy="6" r="3"/>
+                                <circle cx="6" cy="18" r="3"/>
+                                <circle cx="18" cy="18" r="3"/>
+                                <line x1="6" y1="9" x2="6" y2="15"/>
+                                <line x1="18" y1="9" x2="18" y2="15"/>
+                                <line x1="9" y1="6" x2="15" y2="6"/>
+                                <line x1="9" y1="18" x2="15" y2="18"/>
+                            </svg>
+                        </div>
+                        <span>Multi-Agent Systems & Networks</span>
+                    </div>
+                    <div class="theme-item">
+                        <div class="theme-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 20V10"/>
+                                <path d="M18 20V4"/>
+                                <path d="M6 20v-4"/>
+                            </svg>
+                        </div>
+                        <span>Bayesian Uncertainty Quantification</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="applications animate-on-scroll">
+                <h3 class="applications-title">Application Areas</h3>
+                <div class="applications-grid">
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h4>Power Networks</h4>
+                        <p>Cyber-physical reliability of electric power networks</p>
+                    </div>
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                                <path d="M8 12a4 4 0 0 1 8 0"/>
+                            </svg>
+                        </div>
+                        <h4>Genomics</h4>
+                        <p>Robust gene regulation network inference for cancer drug response</p>
+                    </div>
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <h4>Multi-Agent LLMs</h4>
+                        <p>Trustworthy multi-agent large language models</p>
+                    </div>
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="10" rx="2"/>
+                                <circle cx="12" cy="5" r="3"/>
+                                <path d="M7 11V8a5 5 0 0 1 10 0v3"/>
+                            </svg>
+                        </div>
+                        <h4>Robotics</h4>
+                        <p>Reliable robot control in changing environments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="section section-alt" id="speakers">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Speakers</span>
+                <h2 class="section-title">Learn from Leading Researchers</h2>
+                <p class="section-subtitle">World-class experts in robust AI, causality, and intelligent systems</p>
+            </div>
+
+            <div class="speakers-grid animate-on-scroll">
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="DK">
+                        <img src="assets/speakers/daniel-kuhn.jpg" alt="Daniel Kuhn" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Daniel Kuhn</h4>
+                        <p class="speaker-affiliation">EPFL</p>
+                        <p class="speaker-talk">Distributional Robustness in ML</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="AK">
+                        <img src="assets/speakers/Andreas-Krause-2025-web.jpg" alt="Andreas Krause" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Andreas Krause</h4>
+                        <p class="speaker-affiliation">ETH Zürich</p>
+                        <p class="speaker-talk">Robust Sequential Decision-Making</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="JP">
+                        <img src="assets/speakers/jonas-peters.jpg" alt="Jonas Peters" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Jonas Peters</h4>
+                        <p class="speaker-affiliation">ETH Zürich</p>
+                        <p class="speaker-talk">Theoretical Perspectives on OOD Generalization</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="CH">
+                        <img src="assets/speakers/christina-heinze-deml.png" alt="Christina Heinze-Deml" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Christina Heinze-Deml</h4>
+                        <p class="speaker-affiliation">Apple</p>
+                        <p class="speaker-talk">Causality and Distribution Shift</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="CV">
+                        <img src="assets/speakers/claire-vernade.png" alt="Claire Vernade" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Claire Vernade</h4>
+                        <p class="speaker-affiliation">University of Tübingen</p>
+                        <p class="speaker-talk">Continual Learning under Distribution Shift</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="FC">
+                        <img src="assets/speakers/francois-caron.png" alt="François Caron" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">François Caron</h4>
+                        <p class="speaker-affiliation">University of Oxford</p>
+                        <p class="speaker-talk">Bayesian Perspectives on Distributional Uncertainty</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="JJ">
+                        <img src="assets/speakers/Jörn-Jacobsen.jpg" alt="Jörn Jacobsen" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Jörn Jacobsen</h4>
+                        <p class="speaker-affiliation">Isomorphic Labs</p>
+                        <p class="speaker-talk">Representation Learning for Robustness</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="CT">
+                        <img src="assets/speakers/corentin-tallec.png" alt="Corentin Tallec" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Corentin Tallec</h4>
+                        <p class="speaker-affiliation">DeepMind</p>
+                        <p class="speaker-talk">Reliability in Reinforcement Learning</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="MW">
+                        <img src="assets/speakers/markus-wulfmeier.jpg" alt="Markus Wulfmeier" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Markus Wulfmeier</h4>
+                        <p class="speaker-affiliation">DeepMind</p>
+                        <p class="speaker-talk">Reliable ML in Autonomous Systems</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="SS">
+                        <img src="assets/speakers/soroosh-shafiee.jpeg" alt="Soroosh Shafiee" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Soroosh Shafiee</h4>
+                        <p class="speaker-affiliation">Cornell University</p>
+                        <p class="speaker-talk">Robustness in Interacting Multi-Agent Systems</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="SJ">
+                        <img src="assets/speakers/stefanie-jegelka.png" alt="Stefanie Jegelka" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Stefanie Jegelka</h4>
+                        <p class="speaker-affiliation">MIT</p>
+                        <p class="speaker-talk">Distributionally Robust Bayesian Optimization</p>
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo" data-initials="AB">
+                        <img src="assets/speakers/amine-bennouna.png" alt="Amine Bennouna" onerror="this.style.display='none'">
+                    </div>
+                    <div class="speaker-info">
+                        <h4 class="speaker-name">Amine Bennouna</h4>
+                        <p class="speaker-affiliation">Northwestern University</p>
+                        <p class="speaker-talk">Robust Graph ML & Interacting Systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section class="section" id="program">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Program</span>
+                <h2 class="section-title">Four Days of Intensive Learning</h2>
+                <p class="section-subtitle">Lectures, hands-on sessions, panels, and networking opportunities</p>
+            </div>
+
+            <div class="schedule animate-on-scroll">
+                <div class="schedule-tabs">
+                    <button class="schedule-tab active" data-day="1">
+                        <span class="schedule-tab-day">Day 1</span>
+                        <span class="schedule-tab-date">Aug 31</span>
+                    </button>
+                    <button class="schedule-tab" data-day="2">
+                        <span class="schedule-tab-day">Day 2</span>
+                        <span class="schedule-tab-date">Sep 1</span>
+                    </button>
+                    <button class="schedule-tab" data-day="3">
+                        <span class="schedule-tab-day">Day 3</span>
+                        <span class="schedule-tab-date">Sep 2</span>
+                    </button>
+                    <button class="schedule-tab" data-day="4">
+                        <span class="schedule-tab-day">Day 4</span>
+                        <span class="schedule-tab-date">Sep 3</span>
+                    </button>
+                </div>
+
+                <div class="schedule-content">
+                    <!-- Day 1 -->
+                    <div class="schedule-day active" data-day="1">
+                        <div class="schedule-day-header">
+                            <h3>Foundations of Robust Learning</h3>
+                            <p>Establishing the theoretical groundwork for reliable AI systems</p>
+                        </div>
+                        <div class="schedule-items">
+                            <div class="schedule-item">
+                                <div class="schedule-time">09:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Opening</span>
+                                    <h4>Opening Remarks</h4>
+                                    <p>Organizers</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">09:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Distributional Robustness in ML</h4>
+                                    <p>Daniel Kuhn (EPFL)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">11:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Robust Sequential Decision-Making</h4>
+                                    <p>Andreas Krause (ETH Zürich)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item schedule-item-break">
+                                <div class="schedule-time">12:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-break">Break</span>
+                                    <h4>Lunch & Poster Session</h4>
+                                    <p>Networking opportunity</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">14:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Theoretical Perspectives on OOD Generalization</h4>
+                                    <p>Jonas Peters (ETH Zürich)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">15:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-panel">Panel</span>
+                                    <h4>Why Reliability Matters: From Foundations to Practice</h4>
+                                    <p>Panel Discussion</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item schedule-item-social">
+                                <div class="schedule-time">18:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-social">Social</span>
+                                    <h4>Networking Reception & Welcome Dinner</h4>
+                                    <p>ETH Zürich Main Building</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="schedule-day" data-day="2">
+                        <div class="schedule-day-header">
+                            <h3>Causality, Reliability and Distribution Shift</h3>
+                            <p>Understanding and adapting to changing data distributions</p>
+                        </div>
+                        <div class="schedule-items">
+                            <div class="schedule-item">
+                                <div class="schedule-time">09:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Causality and Distribution Shift</h4>
+                                    <p>Christina Heinze-Deml (Apple)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">10:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Continual Learning under Distribution Shift</h4>
+                                    <p>Claire Vernade (University of Tübingen)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item schedule-item-break">
+                                <div class="schedule-time">12:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-break">Break</span>
+                                    <h4>Lunch & Poster Session</h4>
+                                    <p>Networking opportunity</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">14:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Bayesian Perspectives on Distributional Uncertainty</h4>
+                                    <p>François Caron (University of Oxford)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">15:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-workshop">Hands-on</span>
+                                    <h4>Robust ML: Noise Tolerance & Scalability</h4>
+                                    <p>Interactive workshop session</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item schedule-item-social">
+                                <div class="schedule-time">18:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-social">Social</span>
+                                    <h4>Lake Trip Social Event</h4>
+                                    <p>Boat trip on Lake Zürich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="schedule-day" data-day="3">
+                        <div class="schedule-day-header">
+                            <h3>Algorithms and Practice in Interacting Systems</h3>
+                            <p>From theory to implementation in complex systems</p>
+                        </div>
+                        <div class="schedule-items">
+                            <div class="schedule-item">
+                                <div class="schedule-time">09:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Representation Learning for Robustness</h4>
+                                    <p>Jörn Jacobsen (Isomorphic Labs)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">10:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Reliability in Reinforcement Learning</h4>
+                                    <p>Corentin Tallec (DeepMind)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item schedule-item-break">
+                                <div class="schedule-time">12:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-break">Break</span>
+                                    <h4>Lunch & Poster Session</h4>
+                                    <p>Networking opportunity</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">14:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Reliable ML in Autonomous Systems</h4>
+                                    <p>Markus Wulfmeier (DeepMind)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">15:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Robustness in Interacting Multi-Agent Systems</h4>
+                                    <p>Soroosh Shafiee (Cornell University)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">16:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-workshop">Hands-on</span>
+                                    <h4>Uncertainty-Aware Modeling of Complex Systems</h4>
+                                    <p>Interactive workshop session</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 -->
+                    <div class="schedule-day" data-day="4">
+                        <div class="schedule-day-header">
+                            <h3>Emerging Directions and Integration</h3>
+                            <p>Looking ahead: future challenges and synthesis</p>
+                        </div>
+                        <div class="schedule-items">
+                            <div class="schedule-item">
+                                <div class="schedule-time">09:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Distributionally Robust Bayesian Optimization</h4>
+                                    <p>Stefanie Jegelka (MIT)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">10:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Lecture</span>
+                                    <h4>Robust Graph ML & Interacting Systems</h4>
+                                    <p>Amine Bennouna (Northwestern University)</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item schedule-item-break">
+                                <div class="schedule-time">12:00</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-break">Break</span>
+                                    <h4>Lunch</h4>
+                                    <p>Final networking opportunity</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">13:30</div>
+                                <div class="schedule-details">
+                                    <span class="schedule-type type-talk">Closing</span>
+                                    <h4>Closing Remarks & Future Directions</h4>
+                                    <p>Organizers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section class="section section-alt" id="venue">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Venue & Travel</span>
+                <h2 class="section-title">Getting to ETH Zürich</h2>
+                <p class="section-subtitle">Located in the heart of Zürich, Switzerland</p>
+            </div>
+
+            <div class="venue-grid animate-on-scroll">
+                <div class="venue-info">
+                    <div class="venue-card venue-card-main">
+                        <div class="venue-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-6h6v6"/>
+                            </svg>
+                        </div>
+                        <h3>ETH Zürich Main Campus</h3>
+                        <p class="venue-address">Rämistrasse 101<br>8092 Zürich, Switzerland</p>
+                        <p>The summer school will be held at ETH Zürich's historic main building (Hauptgebäude) in the city center, overlooking the beautiful old town and Lake Zürich.</p>
+                    </div>
+                </div>
+
+                <div class="venue-map">
+                    <div class="map-container">
+                        <iframe
+                            src="https://maps.google.com/maps?q=ETH+Zurich+Main+Building&output=embed"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="ETH Zürich Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-section animate-on-scroll">
+                <h3 class="travel-title">Getting to Zürich</h3>
+
+                <div class="travel-grid">
+                    <div class="travel-card">
+                        <div class="travel-card-header">
+                            <div class="travel-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 2L2 11l7 3 3 7 10-19z"/>
+                                </svg>
+                            </div>
+                            <h4>By Air</h4>
+                        </div>
+                        <div class="travel-card-content">
+                            <p><strong>Zürich Airport (ZRH)</strong> is Switzerland's largest international airport with direct connections to most major cities worldwide. Located approximately 10 km north of the city center.</p>
+                            <ul>
+                                <li>Direct train to Zürich HB: every 5–10 min, ~10 min journey</li>
+                                <li>Taxi/rideshare to city center: ~15–20 min, CHF 25–40</li>
+                            </ul>
+                            <div class="travel-note">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 16v-4M12 8h.01"/>
+                                </svg>
+                                <span>Switzerland uses Swiss Francs (CHF), not Euro</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="travel-card">
+                        <div class="travel-card-header">
+                            <div class="travel-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 15l6-6 4 4 6-6"/>
+                                    <path d="M4 19h16"/>
+                                    <circle cx="4" cy="15" r="1"/>
+                                    <circle cx="10" cy="9" r="1"/>
+                                    <circle cx="14" cy="13" r="1"/>
+                                    <circle cx="20" cy="7" r="1"/>
+                                </svg>
+                            </div>
+                            <h4>By Train</h4>
+                        </div>
+                        <div class="travel-card-content">
+                            <p><strong>Zürich Hauptbahnhof (HB)</strong> is one of Europe's best-connected railway hubs.</p>
+                            <ul>
+                                <li>Frankfurt: ~4 hours</li>
+                                <li>Munich: ~3.5 hours</li>
+                                <li>Milan: ~3.5 hours (Gotthard route)</li>
+                                <li>Paris: ~4 hours (TGV Lyria)</li>
+                                <li>Vienna: ~8 hours (Nightjet overnight)</li>
+                            </ul>
+                            <p class="travel-tip">Book via <a href="https://www.sbb.ch" target="_blank" rel="noopener">sbb.ch</a> for "Supersaver" early-bird discounts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-section animate-on-scroll">
+                <h3 class="travel-title">Getting to ETH Zürich</h3>
+
+                <div class="travel-grid travel-grid-three">
+                    <div class="travel-card travel-card-small">
+                        <div class="travel-card-header">
+                            <div class="travel-icon travel-icon-accent">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2v20M2 12h20"/>
+                                    <circle cx="12" cy="6" r="2"/>
+                                    <circle cx="12" cy="18" r="2"/>
+                                </svg>
+                            </div>
+                            <h4>Polybahn</h4>
+                            <span class="travel-badge">Recommended</span>
+                        </div>
+                        <div class="travel-card-content">
+                            <p>The iconic funicular takes you directly from Central square to ETH's main building in under 2 minutes. Free with any ZVV ticket.</p>
+                            <p class="travel-duration">5 min walk from HB + 2 min ride</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-card travel-card-small">
+                        <div class="travel-card-header">
+                            <div class="travel-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="6" width="18" height="12" rx="2"/>
+                                    <circle cx="7" cy="18" r="2"/>
+                                    <circle cx="17" cy="18" r="2"/>
+                                    <path d="M3 10h18"/>
+                                </svg>
+                            </div>
+                            <h4>Tram</h4>
+                        </div>
+                        <div class="travel-card-content">
+                            <p>Take Tram 6 (direction Zoo) or Tram 10 (direction Zürichberg) from Zürich HB to "ETH/Universitätsspital".</p>
+                            <p class="travel-duration">~5 min from Zürich HB</p>
+                        </div>
+                    </div>
+
+                    <div class="travel-card travel-card-small">
+                        <div class="travel-card-header">
+                            <div class="travel-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2C8 6 4 10 4 14a8 8 0 0 0 16 0c0-4-4-8-8-12z"/>
+                                </svg>
+                            </div>
+                            <h4>On Foot</h4>
+                        </div>
+                        <div class="travel-card-content">
+                            <p>A scenic 15-minute uphill walk from Zürich HB through the university quarter.</p>
+                            <p class="travel-duration">~15 min walk (uphill)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transport-info">
+                    <div class="transport-card">
+                        <h4>Public Transport in Zürich</h4>
+                        <ul>
+                            <li>Zürich has an excellent public transport network (ZVV) including trams, buses, and S-Bahn trains</li>
+                            <li>Purchase tickets via the ZVV app or at ticket machines at any stop</li>
+                            <li>24-hour pass for Zone 110 (city): ~CHF 8.80</li>
+                            <li><strong>Tip:</strong> Most Zürich hotels provide a free Zürich Card for unlimited public transport during your stay</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="useful-links">
+                    <h4>Useful Links</h4>
+                    <div class="links-grid">
+                        <a href="https://www.zurich-airport.com" target="_blank" rel="noopener" class="link-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 2L2 11l7 3 3 7 10-19z"/>
+                            </svg>
+                            Zürich Airport
+                        </a>
+                        <a href="https://www.sbb.ch" target="_blank" rel="noopener" class="link-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 15l6-6 4 4 6-6"/>
+                            </svg>
+                            Swiss Railways (SBB)
+                        </a>
+                        <a href="https://www.zvv.ch" target="_blank" rel="noopener" class="link-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="6" width="18" height="12" rx="2"/>
+                            </svg>
+                            Zürich Transport (ZVV)
+                        </a>
+                        <a href="https://www.ethz.ch/campus" target="_blank" rel="noopener" class="link-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21h18M5 21V7l8-4 8 4v14"/>
+                            </svg>
+                            ETH Campus Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Info Section -->
+    <section class="section section-alt" id="practical">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Practical Info</span>
+                <h2 class="section-title">Everything You Need to Know</h2>
+            </div>
+
+            <div class="practical-grid animate-on-scroll">
+                <div class="practical-card">
+                    <div class="practical-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="5" width="20" height="14" rx="2"/>
+                            <line x1="2" y1="10" x2="22" y2="10"/>
+                        </svg>
+                    </div>
+                    <h4>Visa Information</h4>
+                    <p>Switzerland is part of the Schengen Area. Depending on your nationality, you may need a Schengen visa to attend.</p>
+                    <p>If you require an <strong>invitation letter</strong> for your visa application, please contact us at <a href="mailto:aegis2026@ethz.ch">aegis2026@ethz.ch</a> after registering.</p>
+                    <p class="practical-note">We recommend starting the visa process at least 3 months in advance.</p>
+                </div>
+
+                <div class="practical-card">
+                    <div class="practical-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 21h18"/>
+                            <path d="M3 10h18"/>
+                            <path d="M5 6l7-3 7 3"/>
+                            <path d="M4 10v11"/>
+                            <path d="M20 10v11"/>
+                            <path d="M8 14v3"/>
+                            <path d="M16 14v3"/>
+                        </svg>
+                    </div>
+                    <h4>Accommodation</h4>
+                    <p><strong>Accommodation is included</strong> in your registration fee.</p>
+                    <p>We will arrange shared accommodation for all participants near the venue.</p>
+                    <p class="practical-note">More details will be provided upon registration confirmation.</p>
+                </div>
+
+                <div class="practical-card">
+                    <div class="practical-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14.5 10c-1.5 0-3.5 1.5-3.5 3s2 3 3.5 3 3.5-1.5 3.5-3-2-3-3.5-3z"/>
+                            <path d="M2.5 14.5c0-1.5 1.5-3 3-3s3 1.5 3 3-1.5 3-3 3-3-1.5-3-3z"/>
+                            <path d="M12 2v6M12 22v-3"/>
+                        </svg>
+                    </div>
+                    <h4>Weather & What to Pack</h4>
+                    <p>Zürich in August is typically warm and pleasant, with average temperatures of <strong>18–26°C (64–79°F)</strong>. Occasional rain showers are possible.</p>
+                    <ul>
+                        <li>Light layers and a light rain jacket</li>
+                        <li>Comfortable walking shoes (hills!)</li>
+                        <li>Swimwear for Lake Zürich</li>
+                        <li>Laptop for hands-on sessions</li>
+                    </ul>
+                </div>
+
+                <div class="practical-card">
+                    <div class="practical-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                            <circle cx="12" cy="20" r="1"/>
+                        </svg>
+                    </div>
+                    <h4>WiFi & Connectivity</h4>
+                    <p><strong>Eduroam WiFi</strong> is available throughout ETH Zürich campus. If your institution participates in eduroam, no additional setup is needed.</p>
+                    <p>Guest WiFi credentials will be provided at registration for those without eduroam access.</p>
+                </div>
+
+                <div class="practical-card">
+                    <div class="practical-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                            <line x1="6" y1="1" x2="6" y2="4"/>
+                            <line x1="10" y1="1" x2="10" y2="4"/>
+                            <line x1="14" y1="1" x2="14" y2="4"/>
+                        </svg>
+                    </div>
+                    <h4>Meals & Coffee</h4>
+                    <p><strong>Included:</strong> Coffee breaks (apéros) and social event dinner.</p>
+                    <p><strong>Not included:</strong> Lunch is on your own. There are many affordable options on and near campus.</p>
+                    <p class="practical-note">Please indicate any dietary requirements during registration.</p>
+                </div>
+
+                <div class="practical-card">
+                    <div class="practical-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                            <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+                        </svg>
+                    </div>
+                    <h4>Important Dates</h4>
+                    <ul>
+                        <li><strong>Registration opens:</strong> TBD (Spring 2026)</li>
+                        <li><strong>Travel grant deadline:</strong> TBD</li>
+                        <li><strong>Registration deadline:</strong> TBD</li>
+                        <li><strong>Summer school:</strong> August 31 – September 3, 2026</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <section class="section" id="register">
+        <div class="container">
+            <div class="register-wrapper animate-on-scroll">
+                <div class="register-content">
+                    <span class="section-tag">Register</span>
+                    <h2 class="section-title">Join REALIS 2026</h2>
+                    <p class="register-subtitle">Registration will open in Spring 2026. Leave your details to be notified when registration opens.</p>
+
+                    <div class="register-audience">
+                        <h4>Registration Fees</h4>
+                        <ul>
+                            <li><strong>Master Students:</strong> 50 CHF</li>
+                            <li><strong>PhD Students:</strong> 150 CHF</li>
+                        </ul>
+                        <p style="margin-top: 1rem;"><strong>Included:</strong> Accommodation, apéros, and social event dinner.</p>
+                        <p><strong>Not included:</strong> Lunch (on your own).</p>
+                    </div>
+
+                    <div class="register-audience">
+                        <h4>Who Should Apply?</h4>
+                        <p>Master students, PhD students, and young postdocs in:</p>
+                        <ul>
+                            <li>Machine Learning & AI</li>
+                            <li>Applied Mathematics</li>
+                            <li>Robotics & Control Systems</li>
+                            <li>Electrical Engineering</li>
+                            <li>Computational Biology</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="register-form-wrapper">
+                    <form class="register-form" action="#" method="POST" id="interest-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@university.edu">
+                        </div>
+                        <div class="form-group">
+                            <label for="affiliation">Affiliation *</label>
+                            <input type="text" id="affiliation" name="affiliation" required placeholder="University or Institution">
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Role</label>
+                            <select id="role" name="role">
+                                <option value="">Select your role</option>
+                                <option value="master">Master Student</option>
+                                <option value="phd">PhD Student</option>
+                                <option value="postdoc">Postdoctoral Researcher</option>
+                                <option value="faculty">Faculty</option>
+                                <option value="industry">Industry Researcher</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Register Interest</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        <p class="form-note">We'll only use your email to send updates about REALIS 2026.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section class="section section-alt" id="organizers">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Organizers</span>
+                <h2 class="section-title">Organizing Committee</h2>
+            </div>
+
+            <div class="organizers-grid animate-on-scroll">
+                <div class="organizer-card">
+                    <div class="organizer-photo" data-initials="RD">
+                        <img src="assets/organizers/ramzi-dakhmouche.jpg" alt="Ramzi Dakhmouche" onerror="this.style.display='none'">
+                    </div>
+                    <div class="organizer-info">
+                        <h4 class="organizer-name">Ramzi Dakhmouche</h4>
+                        <p class="organizer-affiliation">EPFL · PhD Student</p>
+                        <p class="organizer-bio">Uncertainty quantification and robustness for LLMs and network systems.</p>
+                    </div>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-photo" data-initials="ES">
+                        <img src="assets/organizers/eshaan-sharif.jpeg" alt="Ehsan Sharifian" onerror="this.style.display='none'">
+                    </div>
+                    <div class="organizer-info">
+                        <h4 class="organizer-name">Ehsan Sharifian</h4>
+                        <p class="organizer-affiliation">EPFL · PhD Student</p>
+                        <p class="organizer-bio">Large-scale optimization and decision-making under uncertainty.</p>
+                    </div>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-photo" data-initials="MP">
+                        <img src="assets/organizers/manish_forest.png" alt="Manish Prajapat" onerror="this.style.display='none'">
+                    </div>
+                    <div class="organizer-info">
+                        <h4 class="organizer-name">Manish Prajapat</h4>
+                        <p class="organizer-affiliation">ETH Zürich · PhD Student</p>
+                        <p class="organizer-bio">Safe learning, multi-agent systems, and sequential decision-making.</p>
+                    </div>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-photo" data-initials="BL">
+                        <img src="assets/organizers/bruce-lee.jpeg" alt="Bruce Lee" onerror="this.style.display='none'">
+                    </div>
+                    <div class="organizer-info">
+                        <h4 class="organizer-name">Bruce Lee</h4>
+                        <p class="organizer-affiliation">ETH Zürich · Postdoc</p>
+                        <p class="organizer-bio">Learning and adaptive systems, machine learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper animate-on-scroll">
+                <div class="contact-content">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>For questions about REALIS 2026, please reach out to us.</p>
+
+                    <div class="contact-info">
+                        <a href="mailto:aegis2026@ethz.ch" class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>aegis2026@ethz.ch</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter/X">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="footer-logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2L4 10V22C4 31.05 10.95 39.35 20 40C29.05 39.35 36 31.05 36 22V10L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M20 8L10 13V21C10 26.55 14.15 31.65 20 32C25.85 31.65 30 26.55 30 21V13L20 8Z" fill="currentColor" opacity="0.2"/>
+                        </svg>
+                        <span>REALIS 2026</span>
+                    </div>
+                    <p>Reliable Learning: from LLMs to cyber-physical and biological Systems</p>
+                    <p>August 31 – September 3, 2026 · ETH Zürich</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Program</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#speakers">Speakers</a></li>
+                            <li><a href="#program">Schedule</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Attend</h4>
+                        <ul>
+                            <li><a href="#register">Register</a></li>
+                            <li><a href="#venue">Venue</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Info</h4>
+                        <ul>
+                            <li><a href="#practical">Practical Info</a></li>
+                            <li><a href="#organizers">Organizers</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-sponsors">
+                <h4>Supported By</h4>
+                <div class="sponsors-grid">
+                    <div class="sponsor-logo">
+                        <img src="assets/sponsors/eth-zurich.svg" alt="ETH Zürich" onerror="this.parentElement.innerHTML='<span>ETH Zürich</span>'">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="assets/sponsors/epfl.svg" alt="EPFL" onerror="this.parentElement.innerHTML='<span>EPFL</span>'">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 REALIS Summer School, ETH Zürich. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Imprint</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
