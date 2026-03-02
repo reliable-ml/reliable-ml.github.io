@@ -304,17 +304,7 @@
         }
 
         handleSubmit(e) {
-            e.preventDefault();
-
-            const formData = new FormData(this.form);
-            const data = Object.fromEntries(formData.entries());
-
-            // Here you would typically send to a backend or Google Form
-            // For now, show a success message
             this.showSuccess();
-
-            // Log data for debugging (remove in production)
-            console.log('Form submitted:', data);
         }
 
         showSuccess() {
