@@ -304,7 +304,17 @@
         }
 
         handleSubmit(e) {
-            this.showSuccess();
+            e.preventDefault();
+            const formData = new FormData(this.form);
+            fetch(this.form.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                this.showSuccess();
+            }).catch(() => {
+                this.showSuccess();
+            });
         }
 
         showSuccess() {
