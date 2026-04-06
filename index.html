@@ -995,6 +995,28 @@
                                 <option value="Other">Other</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="poster-title">Poster Title *</label>
+                            <input type="text" id="poster-title" name="entry.POSTER_TITLE" required placeholder="Title of your poster presentation">
+                        </div>
+                        <div class="form-group">
+                            <label for="cv-link">CV Link *</label>
+                            <input type="url" id="cv-link" name="entry.CV_LINK" required placeholder="https://drive.google.com/your-cv-link">
+                            <span class="form-hint">Link to your CV (e.g. Google Drive, Dropbox, personal website)</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Do you request financial aid? *</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="entry.FINANCIAL_AID" value="Yes" required>
+                                    <span>Yes</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="entry.FINANCIAL_AID" value="No">
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
                         <button type="submit" class="btn btn-primary btn-full">
                             <span>Apply</span>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

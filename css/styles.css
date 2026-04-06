@@ -1681,6 +1681,33 @@ button:focus-visible {
     color: var(--color-gray-400);
 }
 
+.form-hint {
+    font-size: 0.75rem;
+    color: var(--color-gray-400);
+}
+
+.radio-group {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-gray-700);
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+    width: 1.125rem;
+    height: 1.125rem;
+    accent-color: var(--color-accent-blue);
+    cursor: pointer;
+}
+
 .form-note {
     text-align: center;
     font-size: 0.8125rem;
