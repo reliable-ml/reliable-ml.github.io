@@ -1,9 +1,9 @@
-# Reliable ML 2026 - Summer School Website
+# REALIS 2027 - Workshop Website
 
-**Reliable Machine Learning: from LLMs to cyber-physical and biological Systems**
-ETH Zürich | August 31 – September 3, 2026
+**REALIS: Reliable Learning for Interacting Systems**
+Proposed workshop at AISTATS 2027 | Montréal | May 3, 2027
 
-A polished, static website for the Reliable ML 2026 summer school, ready to deploy on GitHub Pages.
+The root `index.html` is the workshop page. The previous edition, the Reliable ML 2026 summer school (ETH Zürich, August 31 – September 3, 2026), is archived at `2026/index.html` (served at `/2026/`).
 
 ## Quick Start
 
@@ -137,4 +137,4 @@ reliable-ml/
 
 ## License
 
-© 2026 Reliable ML Summer School, ETH Zürich
+© 2026 REALIS Workshop Organizers
